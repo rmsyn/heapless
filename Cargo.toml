@@ -47,7 +47,7 @@ ufmt-write = { version = "0.1", optional = true }
 defmt = { version = ">=0.2.0,<0.4", optional = true }
 
 # for the pool module
-[target.'cfg(any(target_arch = "arm", target_arch = "aarch64", target_arch = "x86"))'.dependencies]
+[target.'cfg(any(target_arch = "arm", target_arch = "x86"))'.dependencies]
 stable_deref_trait = { version = "1", default-features = false }
 
 [dev-dependencies]
